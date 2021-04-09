@@ -79,12 +79,10 @@ WSGI_APPLICATION = 'TTDGROUP.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'ttdweb',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
     }
+ 
 }
 
 
