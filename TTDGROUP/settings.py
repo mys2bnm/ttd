@@ -26,7 +26,7 @@ SECRET_KEY = 'm8@rixt-s_i1a5cj2^__0rx=no&s27(r56$@2$x*umyf5dk#g+'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['ttdgroup.herokuapp.com']
 
 # Application definition
 
