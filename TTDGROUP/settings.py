@@ -164,3 +164,8 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = 'maiotarisa'
 EMAIL_USE_SSL = False
 #em cam on anh nhieu a,! !! em push code lên máy chủ free như sau
+
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
