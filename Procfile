@@ -1,1 +1,1 @@
-web: python ttdgroup/manage.py migrate; gunicorn TTDGROUP.wsgi --log-file -
+web: gunicorn TTDGROUP.wsgi --log-file -
