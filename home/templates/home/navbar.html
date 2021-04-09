@@ -1,0 +1,20 @@
+{% load static %}
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="{% url 'home:home' %}" class="logo mr-auto"><img src="{% static 'img/logo-ttd1.png' %}" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'home:home' %}">Home</a></li>
+          <li><a href="#about">Về chúng tôi</a></li>
+          <li><a href="#services">Sản phẩm & dịch vụ</a></li>
+          <li><a href="#portfolio">Dự Án</a></li>
+          <li><a href="#team">Showroom</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->

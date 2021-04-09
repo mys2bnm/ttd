@@ -1,0 +1,88 @@
+{% load static %}
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>TTD Group Newsletter</h4>
+            <p>Đăng ký nhận thông tin, sản phẩm, khuyến mãi mới nhất!</p>
+            <form action="{% url 'home:home' %}" method="post">
+              {% csrf_token %}
+              {{ f.email }}
+              {{ f.date_added }}
+              <input type="email" name="email"><input type="submit" value="Đăng ký">
+            </form>
+            <br>
+            {% for message in messages %}
+              <script>
+                window.addEventListener('DOMContentLoaded',
+                  function() {
+                    alert('{{message}}');
+                  }, false);
+              </script>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>TTD GROUP</h3>
+            <p>
+              74 Phan Châu Trinh <br>
+              Hải Châu, Đà Nẵng 550000<br>
+              Việt Nam <br><br>
+              <strong>Phone:</strong> +84 909 077 214<br>
+              <strong>Email:</strong> info@ttd-group.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Đường dẫn</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Về chúng tôi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Sản phẩm & dịch vụ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Catalogs in PDF</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Eglo 2019</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Illare 2019</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Mạng xã hội</h4>
+            <p>Truy cập ngay để được hỗ trợ một cách tốt nhất</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        <img src="{% static 'img/logo-ttd.png' %}">
+      </div>
+      <div class="credits">
+        © 2019 Toàn bộ bản quyền thuộc TTD Group
+      </div>
+    </div>
+  </footer><!-- End Footer -->

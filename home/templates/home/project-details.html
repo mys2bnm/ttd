@@ -1,0 +1,101 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block cssblock %}
+
+  <!-- Favicons -->
+  <link href="{% static 'img/fvc.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/line-awesome/css/line-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 style="margin-top:8px"><i class="icofont-diamond"></i>&nbsp&nbsp&nbsp&nbsp&nbsp{{pD.project_name}}</h4>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>{{pD.project_name}}</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{{ pD.project_image.url }}" class="img-fluid" alt="">
+            <img src="{{ pD.project_image2.url }}" class="img-fluid" alt="">
+            <img src="{{ pD.project_image3.url }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>{{pD.project_name}} <br>{{pD.project_address}}</h3>
+            <ul>
+              <li><strong>Danh mục</strong>: {{pD.category.cate_name}}</li>
+              <li><strong>Thương hiệu</strong>: {{pD.client.client_name}}</li>
+              <li><strong>Thời gian</strong>: {{pD.project_date}}</li>
+              <li><strong>Link sản phẩm</strong>: <a href="{{pD.client.client_link}}">{{pD.client.client_link}}</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>Thông tin dự án</h2>
+          <p>
+            {{pD.project_detail}}
+          </p>
+          <p style="font-style:italic">
+            {{pD.project_body}}
+          </p>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  {% endblock %}
+
+{% block jsblock %}
+<!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

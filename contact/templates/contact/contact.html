@@ -1,0 +1,516 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block cssblock %}
+<!-- Favicons -->
+  <link href="{% static 'img/fvc.png' %}" rel="icon">
+  <link href="{% static 'img/fvc.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/line-awesome/css/line-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Ánh sáng là sự sống</h1>
+          <h2><strong>Sự sáng</strong> là điều không thể thiếu trong sự sống của chúng ta. 
+            <br>
+            <strong>Ánh sáng</strong> gắn liền với <strong>sự sống</strong>.
+          <br>
+          <br>
+            Với kinh nghiệm hơn 25 năm, <strong>TTD Group</strong> vinh dự là một trong
+            <br>những nhà cung cấp giải pháp chiếu sáng và trang trí hàng
+            <br>đầu Việt Nam với những sản phẩm bắt kịp mọi xu hướng,
+            <br>vừa thời trang, đa dạng vừa đồng bộ.</h2>
+          <div><a href="#about" class="btn-get-started scrollto">Tìm hiểu ngay</a></div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="https://www.ttd-group.com/wp-content/uploads/2020/03/DSC00151-730x410.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 d-flex justify-content-center video-box align-items-stretch">
+            <a href="https://www.youtube.com/watch?v=Sklr2kqStGg" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Về chúng tôi</h3>
+            <p>Câu chuyện về sự ra đời của TTD Group được viết những trang đầu tiên vào năm 1992 tại đất nước Tiệp Khắc xinh đẹp.
+              Đến nay TTD đã phát triển mở rộng dài khắp 3 miền đất nước với showroom tại Đà Nẵng và 2 showroom lớn ở Hà Nội. Ngoài ra, TTD cũng làm mới thị trường tại Châu Âu với showroom tại Prague (Cộng Hòa Séc) và showroom tại Valencia (Tây Ban Nha) với mục đính giới thiệu các sản phẩm thiết kế và sản xuât bởi chính TTD.
+            </p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Sự Uy Tín</a></h4>
+              <p class="description">Tại TTD GROUP, chúng tôi tin rằng “Uy tín là thước đo cho sự thành bại của doanh nghiệp”. Lòng tin của khách hàng dành cho thương hiệu là mục tiêu cốt lõi, là “công trình tâm huyết” mà TTD GROUP đã xây dựng từ khi ra đời và luôn củng cố để có được chỗ đứng trong lòng khách hàng trong suốt 25 năm qua.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Chất Lượng Sản Phẩm</a></h4>
+              <p class="description">Mang lại cho Khách hàng niềm tin từ chính những sản phẩm chất lượng, thương hiệu uy tín, xuất xứ rõ ràng cùng với sự tư vấn tận tâm và dịch vụ chuyên nghiệp.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Sự Tận Tâm & Chuyên Nghiệp</a></h4>
+              <p class="description">Mỗi cá nhân tại TTD đều phải vận dụng mọi khả năng, hiểu biết, nguồn lực và quan trọng là sự tâm huyết để cùng tạo nên những công trình mơ ước.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="text-center title">
+          <h3>Những thành tự chúng tôi đã đạt được</h3>
+          <h4>What we have achieved so far</h4>
+        </div>
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">132</span>
+            <p>Khách hàng</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">221</span>
+            <p>Dự Án</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>Giờ Hỗ Trợ</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">130</span>
+            <p>Nhân viên</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-1.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-2.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-3.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-4.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-5.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-6.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-7.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/clients/client-8.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Sản phẩm & Dịch vụ</h2>
+          <h3>Products & Services</h3>
+        </div>
+
+        <div class="row">
+
+          {% for item in cate %}
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <h4 class="title"><a href="{% url 'home:cateDetail' item.cate_id %}">{{ item.cate_name }}</a></h4>
+              <img src="{{ item.cate_img.url }}" width="100%">
+            </div>
+          </div>
+          {% endfor %}
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Dự Án</h2>
+          <h3>Our Projects</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Tất cả</li>
+              <li data-filter=".filter-app">Cá nhân</li>
+              <li data-filter=".filter-card">Doanh nghiệp</li>
+              <li data-filter=".filter-web">Khác</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          {% for item in pro1 %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{ item.project_image1.url }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>{{item.project_name}}</h4>
+                <h4>{{item.project_address}}</h4>
+                <div class="portfolio-links">
+                  <a href="{{ item.project_image1.url }}" data-gall="portfolioGallery" class="venobox" title="{{item.project_name}} {{item.project_address}}"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'project:proDetail' item.project_id %}" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          {% for item in pro2 %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{{ item.project_image1.url }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>{{item.project_name}}</h4>
+                <h4>{{item.project_address}}</h4>
+                <div class="portfolio-links">
+                  <a href="{{ item.project_image1.url }}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'project:proDetail' item.project_id %}" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          {% for item in pro3 %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{{ item.project_image1.url }}" width="" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>{{item.project_name}}</h4>
+                <h4>{{item.project_address}}</h4>
+                <div class="portfolio-links">
+                  <a href="{{ item.project_image1.url }}" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'project:proDetail' item.project_id %}" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Showroom</h2>
+          <h4>Hãy đến với hệ thống showroom của TTD Group để được hưởng những dịch vụ tư vấn chăm sóc khách hàng chuyên nghiệp với đội ngũ nhân viên hiểu biết chuyên sâu, giàu kinh nghiệm.</h4>
+        </div>
+
+        <div class="row" style="text-align:center">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/hn1.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="{% static 'img/team/hn1.jpg' %}" class="venobox" data-gall="gallery-item"><i class="icofont-info"></i></a>
+                  <a href="https://g.page/vincom-mega-mall-royal-city?share"><i class="icofont-search-map"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>SHOWROOM ROYAL CITY</h4>
+                <span>Tầng B2, Khu R6, Royal City,
+                <br>Quận Thanh Xuân
+                  <br><strong>Hà Nội</strong></span>
+                <span>+84 024 6666 8682</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/hn2.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="{% static 'img/team/hn2.jpg' %}" class="venobox" data-gall="gallery-item"><i class="icofont-info"></i></a>
+                  <a href="https://g.page/DenTrangTriTTD?share"><i class="icofont-search-map"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>SHOWROOM THÀNH THÁI</h4>
+                <span>57 Thành Thái
+                  <br>Phường 14, Quận 10
+                  <br><strong>TP. Hồ Chí Minh</strong>
+                  </span>
+                <span>+84 028 3866 9173</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/hn8.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="{% static 'img/team/hn8.jpg' %}" class="venobox" data-gall="gallery-item"><i class="icofont-info"></i></a>
+                  <a href="https://g.page/TTD-PRAHA?share"><i class="icofont-search-map"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>SHOWROOM PRAGUE</h4>
+                <span>Libušská 400/115
+                  <br>Písnice, Praha
+                  <br><strong>Czech Republic</strong>
+                  </span>
+                <span>+420 775 380 845</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team/hcm4.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="{% static 'img/team/hcm4.jpg' %}" class="venobox" data-gall="gallery-item"><i class="icofont-info"></i></a>
+                  <a href="https://goo.gl/maps/9admJ4L4XzgFnLPc8" class="venobox" data-gall="gallery-item"><i class="icofont-search-map"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>VĂN PHÒNG TÂY BAN NHA</h4>
+                <span>Calle Gran Canaria 36
+                <br>C.P 46011, Valencia
+                  <br><strong>Spain</strong></span>
+                <span>+34 628 171 633</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Đối tác</h2>
+          <h4>Our Partners</h4>
+        </div>
+
+        <div class="row no-gutters">
+
+          {% for item in client %}
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ item.client_logo_image.url }}" class="venobox" data-gall="gallery-item">
+                <img src="{{ item.client_image.url }}" alt="" class="img-fluid">
+                <br><br>
+                <h5>{{item.client_name}}</h5>
+                <br>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Liên hệ</h2>
+          <h4>Contact</h4>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.978873903572!2d108.21790881448713!3d16.06658604377717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218337dda8013%3A0xce82f3ad57e43964!2zVFREIEdST1VQIMSQw6huIFRyYW5nIFRyw60!5e0!3m2!1svi!2s!4v1615621409017!5m2!1svi!2s" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Địa điểm:</h4>
+                <p>74 Phan Châu Trinh, Hải Châu 1, Hải Châu, Đà Nẵng, Việt Nam</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@ttd-group.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Hotline Miền Bắc:</h4>
+                <p>09 7150 7222</p>
+                <br>
+                <h4>Hotline Miền Nam:</h4>
+                <p>09 3898 5533</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="{% url 'contact:contact' %}" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" data-rule="minlen:4" data-msg="Làm ơn điền ít nhất 4 kí tự!" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email của bạn" data-rule="email" data-msg="Làm ơn điền email hợp lệ!" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Chủ đề" data-rule="minlen:4" data-msg="Làm ơn điền ít nhất 4 kí tự!" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Xin đừng bỏ trống!" placeholder="Lời nhắn"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="sent-message">Tin nhắn của bạn đã được gửi. Cảm ơn bạn!</div>
+              </div>
+              <div class="text-center"><button type="submit">Gửi tin nhắn</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+
+  </main><!-- End #main -->
+
+
+<!-- Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+{% endblock %}
+
+{% block jsblock %}
+<!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
