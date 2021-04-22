@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from home.models import *
 from django.core.mail import send_mail
-from .forms import Subscriber
+from .forms import Subscriber, Subs
 from django.contrib import messages
 from django.views import View
 
@@ -41,6 +41,8 @@ class Index2(View):
         pro2 = Project.objects.filter(project_status=2)
         pro3 = Project.objects.filter(project_status=3)
         shw = Showroom.objects.all()
+        form1 = Subscriber()
+        form2 = Subs()
         context = {
             'cate': cate,
             'client': client,
@@ -49,52 +51,32 @@ class Index2(View):
             'pro2': pro2,
             'pro3': pro3,
             'shw': shw,
+            'form1':form1,
+            'form2':form2
+
         }
         return render(request, 'home/index.html', context)
 
     def post(self, request):
-        g = Subscriber(request.POST)
-        if not g.is_valid():
-
-            messages.info(request, 'sai roi!')
-        g.save()
-        name = request.POST['name']
-        email = request.POST['email']
-        subject = request.POST['subject']
-        message = request.POST['message']
-
+        if request.method == 'POST':
+            form1 = Subs(request.POST)
+            form2 = Subscriber(request.POST)
+            if form2.is_valid():
+                form2.save()
+                messages.info(request, 'Bạn đã đăng ký thành công!')
+            if form1.is_valid():
+                name = form1.cleaned_data["name"]
+                email = form1.cleaned_data["email"]
+                subject = form1.cleaned_data["subject"]
+                message = form1.cleaned_data["message"]
         # send an email
-        send_mail(
-            '[CSKH] ' + subject,
-            'Người gửi: ' + name + ',\n' + 'Email: ' + email + '\n' + 'Nội dung: ' + message,
-            email,
-            ['maiknd.ttt@gmail.com']
-        )
-        return render(request, 'home/index.html', {'email': email})
-
-
-def index2(request):
-    if request.method == 'POST':
-        g = Subscriber(request.POST)
-        if g.is_valid():
-            g.save()
-            messages.info(request, 'Bạn đã đăng ký thành công!')
-        else:
-            return render(request, 'home/index.html')
-    #logic vớ vẩn vl
-    if request.method == 'POST' and not g.is_valid():
-        name = request.POST['name']
-        email = request.POST['email']
-        subject = request.POST['subject']
-        message = request.POST['message']
-
-        # send an email
-        send_mail(
-            '[CSKH] ' + subject,
-            'Người gửi: ' + name + ',\n' + 'Email: ' + email + '\n' + 'Nội dung: ' + message,
-            email,
-            ['maiknd.ttt@gmail.com']
-        )
-        return render(request, 'home/index.html', {'email': email})
-    else:
-        return render(request, 'home/index.html', {})
+                send_mail(
+                    '[CSKH] ' + subject,
+                    'Người gửi: ' + name + ',\n' + 'Email: ' + email + '\n' + 'Nội dung: ' + message,
+                    email,
+                    ['maiknd.ttt@gmail.com']
+                )
+            form1=Subscriber()
+            form2=Subs()
+            context={"form1":form1,"form2":form2}
+            return render(request, 'home/index.html',context)
